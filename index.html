@@ -1,55 +1,28 @@
-<html>
-  <head>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-    <style>
-      body {
-        background-color: pink;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
+</head>
+<body>
+  <h1>Hello World</h1>
+  <button onclick="f1()">Click Me</button>
+  <button onmouseover="f()">Move Me</button>
+  <script type="text/javascript">
+    let flag = 1;
+    function f1() {
+      alert("yey");
+    }
+    function f() {
+      if (flag === 1) {
+        Bn.style.top = 400;
+        Bn.style.left = 300;
+        flag = 2;
+      } else if (flag === 2) {
+        Bn.style.top = 400;
+        Bn.style.left = 50;
+        flag = 3;
+      } else if (flag === 3) {
+        Bn.style.top = 370;
+        Bn.style.left = 166;
+        flag = 1;
       }
-      .word {
-        opacity: 0;
-        display: inline-block;
-        animation: fadeIn 2s forwards;
-      }
-      .word:nth-child(1) {
-        animation-delay: 0s;
-      }
-      .word:nth-child(2) {
-        animation-delay: 2s;
-      }
-      .word:nth-child(3) {
-        animation-delay: 4s;
-      }
-      .word:nth-child(4) {
-        animation-delay: 6s;
-      }
-      .word:nth-child(5) {
-        animation-delay: 8s;
-      }
-      h1 {
-        font-family: 'Quicksand', sans-serif;
-        font-size: 68px;
-      }
-      @keyframes fadeIn {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <h1 style="text-align: center;">
-      <span class="word">aku</span>
-      <span class="word">suka</span>
-      <span class="word">banget</span>
-      <span class="word">sama</span>
-      <span class="word">tokek</span>
-    </h1>
-  </body>
+    }
+  </script>
+</body>
 </html>

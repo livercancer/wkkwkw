@@ -1,0 +1,12 @@
+button {
+    background-color: transparent;
+    border: none;
+    color: black;
+    padding: 0;
+    text-align: center;
+    text-decoration: underline;
+    display: inline-block;
+    margin: 0;
+    cursor: pointer;
+  }
+</style>
